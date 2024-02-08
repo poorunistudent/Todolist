@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To-Do List</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h2>Hello <span id="userNamePlaceholder"></span>! Here's your To-Do List:</h2>
+    <input type="text" id="taskInput" placeholder="Add new task">
+    <button onclick="addTask()">Add Task</button>
+    <button onclick="clearAllTasks()">Clear All</button>
+    <button onclick="goBack()">Back</button> <!-- New button to go back to the welcome page -->
+    <ul id="taskList"></ul>
+    <div class="motivated-quote" id="motivatedQuote"></div>
+</div>
+
+<script src="script.js"></script>
+<script>
+    // Retrieve username from localStorage and update placeholder
+    var userName = localStorage.getItem('userName');
+    document.getElementById('userNamePlaceholder').textContent = userName;
+</script>
+</body>
+</html>
+
+

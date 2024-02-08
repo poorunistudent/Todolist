@@ -1,0 +1,131 @@
+body {
+    background-color: #120e2a;
+    min-height: 70vh;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(198, 1%, 29%);
+    font-family: 'Gochi Hand', cursive;
+    text-align: center;
+    font-size: 130%;  
+}
+
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #e3dbec;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(18, 38, 151, 0.1);
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    animation: fadeIn 1s ease-out; /* Apply fade-in animation to the container */
+}
+
+
+
+
+
+h2 {
+    font-size: 25px;
+    color: #1b1919;
+}
+
+#userNamePlaceholder {
+    font-weight: bold;
+    color: #330b45;
+}
+
+input[type="text"] {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #030f1c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+button:hover {
+    background-color: #06172a;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+
+li {
+    animation: slideIn 0.5s ease; /* Add slide-in animation to list items */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px); /* Start position above its final position */
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0); /* Final position */
+        opacity: 1;
+    }
+}
+
+
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.motivated-quote {
+    margin-top: 20px;
+    font-style: italic;
+    color: #555;
+}
+
+.motivated-quote {
+    animation: pulse 2s infinite alternate; /* Apply pulse animation */
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(0.9); /* Normal size */
+    }
+    to {
+        transform: scale(1,1); /* Enlarged size */
+    }
+}
+
